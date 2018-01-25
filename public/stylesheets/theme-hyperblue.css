@@ -70,6 +70,10 @@ ul {
 ul.bullets {
   list-style: inside;
 }
+ul.bullets-padded{
+	list-style: inside;
+	padding-left: 20px;
+}
 .main-container {
   clear: both;
 }
@@ -3317,7 +3321,7 @@ img {
   text-transform: none;
   line-height: 1;
   font-size: 24px;
-  color: #fff;
+  color: #000;
 }
 .flex-direction-nav a.flex-prev {
   left: 16px;
@@ -3348,20 +3352,20 @@ img {
   }
 }
 .controls-inside .flex-control-nav {
-  bottom: 24px;
+  bottom: 0px;
   z-index: 10;
 }
 .controls-inside .flex-control-nav li a {
-  border-color: #fff;
+  border-color: #000;
 }
 .controls-inside .flex-control-nav li a.flex-active {
-  background: #fff;
+  background: #000;
 }
 .image-bg .flex-control-nav li a {
-  border-color: #fff;
+  border-color: #000;
 }
 .image-bg .flex-control-nav li a.flex-active {
-  background: #fff;
+  background: #000;
 }
 .slider-thumb-controls .flex-control-thumbs {
   margin: 0;

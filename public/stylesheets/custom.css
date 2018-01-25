@@ -1,1 +1,18 @@
 /****** PLACE YOUR CUSTOM STYLES HERE ******/
+
+.image-slider > .slides > li > .half-width{
+	width: 50%;
+	margin: 0 auto;
+	display: inherit;
+}
+
+p .nomargin{
+	margin: 0;
+}
+
+.bg-dark .btn-filled:hover{
+	background: #fff;
+	border-color: #fff;
+  opacity: .9;
+	color: #000;
+}
