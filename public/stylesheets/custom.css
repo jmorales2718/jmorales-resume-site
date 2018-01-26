@@ -28,3 +28,11 @@ p .nomargin{
 background: -webkit-linear-gradient(-45deg, rgba(16,75,169,1) 0%,rgba(53,99,168,0.5) 100%); /* Chrome10-25,Safari5.1-6 */
 background: linear-gradient(135deg, rgba(16,75,169,1) 0%,rgba(53,99,168,0.5) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
 filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#104ba9', endColorstr='#803563a8',GradientType=1 );
+	
+	
+@media only screen and (max-width: 768px) {
+	.hidden-xs{
+		visibility: hidden;
+	}
+		
+}
