@@ -379,7 +379,7 @@ $(document).ready(function() {
         var vidURL = '';
 
         if(provider == 'vimeo'){
-            vidURL = "http://player.vimeo.com/video/"+videoID+"?badge=0&title=0&byline=0&title=0&autoplay="+autoplay;
+            vidURL = "https://player.vimeo.com/video/"+videoID+"?badge=0&title=0&byline=0&title=0&autoplay="+autoplay;
             $(this).attr('data-src', vidURL);
         }else if (provider == 'youtube'){
             vidURL = "https://www.youtube.com/embed/"+videoID+"?showinfo=0&autoplay="+autoplay;
