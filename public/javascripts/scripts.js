@@ -1007,7 +1007,25 @@ $(document).ready(function() {
             document.body.appendChild(script);  
         } 
     }
-
+		
+		if(window.location.pathname === "/portfolio"){
+			var urlParamVal = parseInt(getURLParameter("project"));
+			if( urlParamVal === 0){
+				$('html, body').animate({
+						scrollTop: $("#cl").offset().top
+				}, 10);
+			}else if( urlParamVal === 1){
+				$('html, body').animate({
+						scrollTop: $("#ef").offset().top
+				}, 10);
+			}else if( urlParamVal === 2){
+				$('html, body').animate({
+						scrollTop: $("#nydc").offset().top - 100
+				}, 10);
+			}
+			mr_navFixed = true;
+			$(mr_nav).addClass("fixed");
+		}
 }); 
 
 $(window).load(function() { 
@@ -1022,6 +1040,10 @@ $(window).load(function() {
 
 
 }); 
+
+
+
+
 function updateNav() {
 
     var scrollY = mr_scrollTop;
