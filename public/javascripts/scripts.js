@@ -1008,27 +1008,28 @@ $(document).ready(function() {
         } 
     }
 		
-		if(window.location.pathname === "/portfolio"){
-			var urlParamVal = parseInt(getURLParameter("project"));
-			if( urlParamVal === 0){
-				$('html, body').animate({
-						scrollTop: $("#cl").offset().top
-				}, 10);
-			}else if( urlParamVal === 1){
-				$('html, body').animate({
-						scrollTop: $("#ef").offset().top
-				}, 10);
-			}else if( urlParamVal === 2){
-				$('html, body').animate({
-						scrollTop: $("#nydc").offset().top - 55
-				}, 1500);
-			}
-			if(!mr_navFixed){
-				mr_navFixed = true;
-				$(mr_nav).addClass("fixed");
+		window.onload = function () {
+			if(window.location.pathname === "/portfolio"){
+				var urlParamVal = parseInt(getURLParameter("project"));
+				if( urlParamVal === 0){
+					$('html, body').animate({
+							scrollTop: $("#cl").offset().top
+					}, 10);
+				}else if( urlParamVal === 1){
+					$('html, body').animate({
+							scrollTop: $("#ef").offset().top
+					}, 10);
+				}else if( urlParamVal === 2){
+					$('html, body').animate({
+							scrollTop: $("#nydc").offset().top - 55
+					}, 10);
+				}
+				if(!mr_navFixed){
+					mr_navFixed = true;
+					$(mr_nav).addClass("fixed");
+				}
 			}
 		}
-			
 }); 
 
 $(window).load(function() { 
