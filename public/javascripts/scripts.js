@@ -1020,12 +1020,15 @@ $(document).ready(function() {
 				}, 10);
 			}else if( urlParamVal === 2){
 				$('html, body').animate({
-						scrollTop: $("#nydc").offset().top - 100
-				}, 10);
+						scrollTop: $("#nydc").offset().top - 55
+				}, 1500);
 			}
-			mr_navFixed = true;
-			$(mr_nav).addClass("fixed");
+			if(!mr_navFixed){
+				mr_navFixed = true;
+				$(mr_nav).addClass("fixed");
+			}
 		}
+			
 }); 
 
 $(window).load(function() { 
