@@ -2122,7 +2122,7 @@ button[type="submit"] .form-loading {
   -moz-transition: all 0.4s ease;
 }
 .accordion li.active .content {
-  max-height: 400px;
+  max-height: 500px;
 }
 .accordion p:last-child {
   margin-bottom: 0;
